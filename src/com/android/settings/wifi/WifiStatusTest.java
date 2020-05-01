@@ -343,7 +343,7 @@ public class WifiStatusTest extends Activity {
     private final void pingHostname() {
         try {
             // TODO: Hardcoded for now, make it UI configurable
-            Process p = Runtime.getRuntime().exec("ping -c 1 -w 100 www.google.com");
+            Process p = Runtime.getRuntime().exec("ping -c 1 -w 100 www.baidu.com");
             int status = p.waitFor();
             if (status == 0) {
                 mPingHostnameResult = "Pass";
@@ -363,7 +363,7 @@ public class WifiStatusTest extends Activity {
         HttpURLConnection urlConnection = null;
         try {
             // TODO: Hardcoded for now, make it UI configurable
-            URL url = new URL("https://www.google.com");
+            URL url = new URL("https://www.baidu.com");
             urlConnection = (HttpURLConnection) url.openConnection();
             if (urlConnection.getResponseCode() == 200) {
                 mHttpClientTestResult = "Pass";
