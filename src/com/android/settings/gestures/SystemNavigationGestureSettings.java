@@ -96,7 +96,7 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
             NAV_BAR_MODE_GESTURAL_OVERLAY_EXTRA_WIDE_BACK
     };
     @VisibleForTesting
-    static int BACK_GESTURE_INSET_DEFAULT_OVERLAY = 1;
+    static int BACK_GESTURE_INSET_DEFAULT_OVERLAY = 2;
 
     private IOverlayManager mOverlayManager;
 
